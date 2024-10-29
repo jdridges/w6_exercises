@@ -14,7 +14,7 @@ import statistics
 
                 #Random module
 
-import random 
+# import random 
 
 # gar_bill = [1.33, 4, 14.95, 2, 10, 29.98, 3.46]
 
