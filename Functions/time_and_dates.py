@@ -20,6 +20,6 @@ print(ninety_d_formatted)
 
 
             #LAB2 Q5
-dinner_time = datetime.time(17, 30, 00, 00,)
+dinner_time = datetime.time(17, 30)
 dinner_time_formatted = dinner_time.strftime("Lets meet for dinner at %I:%M %p")
 print(dinner_time_formatted)
