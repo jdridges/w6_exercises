@@ -9,9 +9,13 @@ radius = random.randint(3,10)
 pi = math.pi
 
 #sum of sample 75 samples from 1 to 100:
-print(math.fsum(vals_sample))
+def sum_sample()
 
 #avg of 75 sample values
 print(statistics.mean(vals_sample))
 
 
+#median of 75 sample values
+print(statistics.median(vals_sample))
+
+#avg of 200 values
