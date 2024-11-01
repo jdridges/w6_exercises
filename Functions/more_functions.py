@@ -8,15 +8,26 @@ display_mailing_label('Jacob Ridges', '1999 fvknfv court', 'Greenburg', 'Califor
 display_mailing_label('Bob Ross', '1999 painting lane', 'London', 'England', '61192')
 
 #LAB2 Q3
-def add_numbers(*args):
-    total = sum(args)
-    addition_symbol = " + ".join(str(num) for num in args)
-    print(f'{addition_symbol} = {total}')
+def add_numbers(*num):
 
-add_numbers(1,3,5)         #there may be a way to do this differently
-add_numbers(30,50,40,90)    
-add_numbers(1)
-add_numbers(1,2)
+    result_list = ''
+
+    for i in num:
+        result_list = result_list + str(i)
+        if i == num[-1]:
+            break
+        else:
+            result_list = result_list + ' + '
+
+    total = sum(num)
+
+    return f'{result_list} = {total}' 
+    
+
+print(add_numbers(1,3,5))         
+print(add_numbers(30,50,40,90))    
+print(add_numbers(1))
+print(add_numbers(1,2))
 
 #LAB2 Q4
 def display_receipt(total_due, amount_paid):
