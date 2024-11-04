@@ -19,7 +19,21 @@ restaurant1 = Restaurant('Weedy\'s', 'American fast food')
 restaurant2 = Restaurant('McNaldos', 'American fast food')
 restaurant3 = Restaurant('Applebapple\'s', 'American fine dining')
 
-for x in [restaurant1, restaurant2, restaurant3]:
-    x.describe_rest()
-    x.rest_open()
-    print()
+restaurant1.describe_rest()
+restaurant1.rest_open()
+print()
+restaurant2.describe_rest()
+restaurant2.rest_open()
+print()
+restaurant3.describe_rest()
+restaurant3.rest_open()
+
+
+##### OR
+
+
+
+# for x in [restaurant1, restaurant2, restaurant3]:
+#     x.describe_rest()
+#     x.rest_open()
+#     print()
