@@ -13,7 +13,7 @@ def trunc_name(name):
 # print(name('CHARLIE'))
 
 def name_game(name):
-    full_name = name.lower()
+    full_name = name.capitalize()
     truncated = trunc_name(name)
 
     yield f'{full_name}, {full_name}, bo-b{truncated}'
@@ -24,6 +24,6 @@ def name_game(name):
 names_to_try = ['Jacob', 'carly', 'CHARLIE', 'Aidan', 'Braden', 'Billy Bob']
 
 for name in names_to_try:
-    print(f'Name game for {name}')
+    print(f'Name game for {name.capitalize()}')
     for position in name_game(name):
         print(position)
